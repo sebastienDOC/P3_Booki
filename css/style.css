@@ -39,6 +39,10 @@ h1 {
   padding-bottom: 10px;
 }
 
+li {
+  display: list-item;
+}
+
 /* MAIN */
 
 .sectionRecherche {
@@ -68,11 +72,11 @@ h1 {
 }
 
 .grid-hebergements {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  grid-template-rows: 200px 200px;
-  gap: 20px;
-}
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr ;
+    grid-template-rows: 200px 200px;
+    gap: 20px;
+  }
 
 .grid-activites {
   display: grid;
