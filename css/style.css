@@ -77,8 +77,8 @@ h1 {
 .grid-activites {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
-  grid-template-rows: 500px;
-  gap: 20px;
+  grid-template-rows: 400px;
+  gap: 40px;
 }
 
 .grid-populaire {
@@ -119,6 +119,7 @@ h1 {
 
 img {
   margin: 0;
+  border-radius: 20px;
 }
 
 
