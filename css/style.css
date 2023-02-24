@@ -225,6 +225,30 @@ h3, p {
   margin: 10px;
 }
 
+.stars {
+  display: inline-flex;
+  justify-content: center;
+  padding-left: 10px;
+}
+
+.fa-star {
+	color: rgb(240, 240, 240);
+	cursor: pointer;
+}
+
+
+.fa-star.blue {
+	color: #0065FC;
+}
+
+.stars:hover .fa-star {
+  color: #0065FC;
+}
+
+.stars .fa-star:hover ~ .fa-star {
+  color: rgb(240, 240, 240);
+}
+
 /* FOOTER */
 
 .foot {
