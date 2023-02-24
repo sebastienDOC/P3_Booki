@@ -280,6 +280,27 @@ h3, p {
   margin: 10px;
 }
 
+i {
+  color: #0065FC;
+}
+
+i#loc {
+  color: black;
+}
+
+i#vector {
+  position: relative;
+  top: 45px;
+  left: 120px;
+
+}
+
+.icon {
+  display: flex;
+  justify-content: flex-start;
+  margin-bottom: 20px;
+}
+
 /* RATING SYSTEM */
 
 .stars {
