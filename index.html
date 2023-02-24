@@ -3,6 +3,7 @@
 	<head>
 		<meta charset="utf-8">
 		<link rel="stylesheet" type="text/css" href="css/style.css">
+        <script src="https://kit.fontawesome.com/1b648a244e.js" crossorigin="anonymous"></script>
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap" rel="stylesheet">
@@ -11,7 +12,9 @@
     <body>
         <header>
             <nav>
-                <img  src="images/logo/Booki.png" alt="Logo Booki" id="logo">
+                <div class="logo">
+                    <img  src="images/logo/Booki.png" alt="Logo Booki" id="logo" name="logo">
+                </div>
                 <div>
                     <a href="sectionHebergements">Hébergement</a>
                     <a href="sectionActivites">Activités</a>
@@ -25,73 +28,158 @@
             </section>
             <div class="aligne">
             <section class="sectionHebergements">
-                <h1>Hébergements à Marseille</h1>
-                <div class="grid-hebergements">
-                    
-                        <a href="" class="lien-conteneur-photo">
-                            <img src="images/hebergements/4_small/marcus-loke-WQJvWU_HZFo-unsplash.jpg" alt="Auberge La Canebière" >
-                            <div class="photo-hover"></div>
-                        </a>
-                        <a href="" class="lien-conteneur-photo">
-                            <img src="images/hebergements/4_small/fred-kleber-gTbaxaVLvsg-unsplash.jpg" alt="Hôtel du port" >
-                            <div class="photo-hover"></div>
-                        </a>
-                        <a href="" class="lien-conteneur-photo">
-                            <img src="images/hebergements/4_small/reisetopia-B8WIgxA_PFU-unsplash.jpg" alt="Hôtel Les mouettes" >
-                            <div class="photo-hover"></div>
-                        </a>
-                        <a href="" class="lien-conteneur-photo">
-                            <img src="images/hebergements/2_large/annie-spratt-Eg1qcIitAuA-unsplash.jpg" alt="Hôtel de la mer" >
-                            <div class="photo-hover"></div>
-                        </a>
-                        <a href="" class="lien-conteneur-photo">
-                            <img src="images/hebergements/4_small/nicate-lee-kT-ZyaiwBe0-unsplash.jpg" alt="Auberge Le Panier" >
-                            <div class="photo-hover"></div>
-                        </a>
-                        <a href="" class="lien-conteneur-photo">
-                            <img src="images/hebergements/4_small/febrian-zakaria-M6S1WvfW68A-unsplash.jpg" alt="Hôtel Chez Amina" >
-                            <div class="photo-hover"></div>
-                        </a>
-                   
+                <h2>Hébergements à Marseille</h2>
+                <div class="hebergements">
+                    <article class="lien-conteneur-photo">
+                            <div class="flex1">
+                            <div class="img-heb">
+                                <img src="images/hebergements/4_small/marcus-loke-WQJvWU_HZFo-unsplash.jpg" alt="Auberge La Canebière" id="hotel">
+                            </div>
+                            <div class="txt-heb">
+                                <h3>Auberge la Canebière</h3>
+                                <p>Nuit à partir de 25€</p>
+                            </div>
+                        </div>
+                    </article>
+                    <article class="lien-conteneur-photo">
+                            <div class="flex1">
+                                <div class="img-heb">
+                                    <img src="images/hebergements/4_small/fred-kleber-gTbaxaVLvsg-unsplash.jpg" alt="Hôtel du port" id="hotel">
+                                </div>
+                                <div class="txt-heb">
+                                    <h3>Hôtel du port</h3>
+                                    <p>Nuit à partir de 52€</p>
+                                </div>
+                            </div>
+                    </article>
+                    <article class="lien-conteneur-photo">
+                            <div class="flex1">
+                                <div class="img-heb">
+                                    <img src="images/hebergements/4_small/reisetopia-B8WIgxA_PFU-unsplash.jpg" alt="Hôtel Les mouettes" id="hotel">
+                                </div>
+                                <div class="txt-heb">
+                                    <h3>Hôtel Les mouettes</h3>
+                                    <p>Nuit à partir de 76€</p>
+                                </div>
+                            </div>
+                    </article>
+                    <article class="lien-conteneur-photo">
+                            <div class="flex1">
+                                <div class="img-heb">
+                                    <img src="images/hebergements/4_small/annie-spratt-Eg1qcIitAuA-unsplash.jpg" alt="Hôtel de la mer" id="hotel">
+                                </div>
+                                <div class="txt-heb">
+                                    <h3>Hôtel de la mer</h3>
+                                    <p>Nuit à partir de 46€</p>
+                                </div>
+                            </div>
+                    </article>
+                    <article class="lien-conteneur-photo">
+                            <div class="flex1">
+                                <div class="img-heb">
+                                    <img src="images/hebergements/4_small/nicate-lee-kT-ZyaiwBe0-unsplash.jpg" alt="Auberge Le Panier" id="hotel">
+                                </div>
+                                <div class="txt-heb">
+                                    <h3>Auberge Le Panier</h3>
+                                    <p>Nuit à partir de 23€</p>
+                                </div>
+                            </div>
+                    </article>
+                    <article class="lien-conteneur-photo">
+                            <div class="flex1">
+                                <div class="img-heb">
+                                    <img src="images/hebergements/4_small/febrian-zakaria-M6S1WvfW68A-unsplash.jpg" alt="Hôtel Chez Amina" id="hotel">
+                                </div>
+                                <div class="txt-heb">
+                                    <h3>Hôtel Chez Amina</h3>
+                                    <p>Nuit à partir de 96€</p>
+                                </div>
+                            </div>
+                    </article>
                 </div>
             </section>
             <section class="sectionPopulaire">
-                <h1>Les plus populaires</h1>
-                <div class="grid-populaire">
-                <a href="" class="lien-conteneur-photo">
-                    <img src="images/hebergements/4_small/emile-guillemot-Bj_rcSC5XfE-unsplash.jpg" alt="Hôtel Le soleil du matin">
-                    <div class="photo-hover"></div>
-                </a>
-                <a href="" class="lien-conteneur-photo">
-                    <img src="images/hebergements/4_small/aw-creative-VGs8z60yT2c-unsplash.jpg" alt="Chambres d'hôtes Au cœur de l'eau">
-                    <div class="photo-hover"></div>
-                </a>
-                <a href="" class="lien-conteneur-photo">
-                    <img src="images/hebergements/4_small/febrian-zakaria-sjvU0THccQA-unsplash.jpg" alt="Hôtel Bleu et Blanc">
-                    <div class="photo-hover"></div>
-                </a>
+                <h2>Les plus populaires</h2>
+                    <div class="populaire">
+                        <article class="lien-conteneur-photo">
+                            <div class="flex2">
+                                <div class="img-pop">
+                                    <img src="images/hebergements/4_small/emile-guillemot-Bj_rcSC5XfE-unsplash.jpg" alt="Hôtel Le soleil du matin" id="hotel2">
+                                </div>
+                                <div class="txt-pop">
+                                    <h3>Hôtel Le soleil du matin</h3>
+                                    <p>Nuit à partir de 128€</p>
+                                </div>
+                            </div>
+                        </article>
+                        <article class="lien-conteneur-photo">
+                            <div class="flex2">
+                                <div class="img-pop">
+                                    <img src="images/hebergements/4_small/aw-creative-VGs8z60yT2c-unsplash.jpg" alt="Chambres d'hôtes Au cœur de l'eau" id="hotel2">
+                                </div>
+                                <div class="txt-pop">
+                                    <h3>Chambres d'hôtes Au cœur de l'eau</h3>
+                                    <p>Nuit à partir de 71€</p>
+                                </div>
+                            </div>
+                        </article>
+                        <article class="lien-conteneur-photo">
+                            <div class="flex2">
+                                <div class="img-pop">
+                                    <img src="images/hebergements/4_small/febrian-zakaria-sjvU0THccQA-unsplash.jpg" alt="Hôtel Bleu et Blanc" id="hotel2">
+                                </div>
+                                <div class="txt-pop">
+                                    <h3>Hôtel Bleu et Blanc</h3>
+                                    <p>Nuit à partir de 68€</p>
+                                </div>
+                            </div>
+                        </article>
+                    </div>
                 </div>
-            </div>
             </section>
             <section class="sectionActivites">
-                <h1>Activités à Marseille</h1>
-                <div class="grid-activites">
-                    <a href="" class="lien-conteneur-photo">
-                        <img src="images/activites/3_medium/reno-laithienne-QUgJhdY5Fyk-unsplash.jpg" alt="Vieux-Port" >
-                        <div class="photo-hover"></div>
-                    </a>
-                    <a href="" class="lien-conteneur-photo">
-                        <img src="images/activites/3_medium/paul-hermann-QFTrLdQIRhI-unsplash.jpg" alt="Fort de Pomègues" >
-                        <div class="photo-hover"></div>
-                    </a>
-                    <a href="" class="lien-conteneur-photo">
-                        <img src="images/activites/3_medium/kilyan-sockalingum-NR8-cBCN3aI-unsplash.jpg" alt="Parc national des Calanques" >
-                        <div class="photo-hover"></div>
-                    </a>
-                    <a href="" class="lien-conteneur-photo">
-                        <img src="images/activites/3_medium/florian-wehde-xW9e8gdotxI-unsplash.jpg" alt="Notre-Dame-de-la-Garde" >
-                        <div class="photo-hover"></div>
-                    </a>
+                <h2>Activités à Marseille</h2>
+                <div class="activites">
+                        <article class="lien-conteneur-photo">
+                            <div class="flex3">
+                                <div class="img-heb">
+                                    <img src="images/activites/3_medium/reno-laithienne-QUgJhdY5Fyk-unsplash.jpg" alt="Vieux-Port" id="hotel3">
+                                </div>
+                                <div class="txt-heb">
+                                    <h3>Vieux-Port</h3>
+                                </div>
+                            </div>
+                        </article>
+                        <article class="lien-conteneur-photo">
+                            <div class="flex3">
+                                <div class="img-heb">
+                                    <img src="images/activites/3_medium/paul-hermann-QFTrLdQIRhI-unsplash.jpg" alt="Fort de Pomègues" id="hotel3">
+                                </div>
+                                <div class="txt-heb">
+                                    <h3>Fort de Pomègues</h3>
+                                </div>
+                            </div>
+                        </article>
+                        <article class="lien-conteneur-photo">
+                            <div class="flex3">
+                                <div class="img-heb">
+                                    <img src="images/activites/3_medium/kilyan-sockalingum-NR8-cBCN3aI-unsplash.jpg" alt="Parc national des Calanques" id="hotel3">
+                                </div>
+                                <div class="txt-heb">
+                                    <h3>Parc national des Calanques</h3>
+                                </div>
+                            </div>
+                        </article>
+                        <article class="lien-conteneur-photo">
+                            <div class="flex3">
+                                <div class="img-heb">
+                                    <img src="images/activites/3_medium/florian-wehde-xW9e8gdotxI-unsplash.jpg" alt="Notre-Dame-de-la-Garde" id="hotel3">
+                                </div>
+                                <div class="txt-heb">
+                                    <h3>Notre-Dame-de-la-Garde</h3>
+                                </div>
+                            </div>
+                        </article>
                 </div>
             </section>
         </main>
@@ -103,7 +191,7 @@
                     <p>Conditions générales</p>
                     <p>Données et confidentialité</p>
                 </div>
-                <div class="hebergements">
+                <div class="heb">
                 <h2>Nos hébergements</h2>
                     <p>Charte qualité</p>
                     <p>Proposez votre hôtel</p>
