@@ -5,6 +5,7 @@ body {
   font-size: 1em;
   max-width: 1400px;
   margin: auto;
+  padding-top: 50px;
 }
 
 h1 {
@@ -35,10 +36,6 @@ p {
 
 /* HEADER */
 
-header {
-  margin-top: 50px;
-}
-
 a {
   text-decoration: none;
   color: black;
@@ -50,16 +47,30 @@ a:hover {
   font-weight: bold;
 }
 
+.a1 {
+  padding-top: 49px;
+  border-top-width: 5px;
+  border-top-style: solid;
+  border-top-color: transparent;
+}
+
+.a1:hover {
+  border-top-width: 5px;
+  border-top-style: solid;
+  border-top-color: #0065FC;  
+}
+
+
 nav {
   display: flex;
   flex-direction: row;
   align-items: center;
   justify-content: space-between;
-  margin-bottom: 50px;
 }
 
 nav a {
-  margin-left: 100px;
+  margin-left: 40px;
+  padding: 20px;
 }
 
 img#logo {
@@ -68,12 +79,56 @@ img#logo {
   height: 19px;
 }
 
+/* MAIN */
+
+.recherche {
+  display: flex;
+  justify-content: flex-start;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.pointeur {
+  border-width: 2px;
+  border-style: solid;
+  border-color: #F2F2F2;  
+  border-top-left-radius: 20px;
+  border-bottom-left-radius: 20px;
+  padding: 10px;
+  padding-left: 20px;
+  background-color: #F2F2F2;
+}
+
+input#search {
+  width: 100%;
+  border: transparent;
+  font-size: 18px;
+}
+
+.barre {
+  border-width: 2px;
+  border-style: solid;
+  border-color: #F2F2F2; 
+  padding: 10px;
+}
+
+input#bouton {
+  background-color: #0065FC;
+  color: white;
+  border-color: transparent;
+  border-top-right-radius: 20px;
+  border-bottom-right-radius: 20px;
+  padding: 14px;
+  text-align: center;
+  position: relative;
+  right: 2px;
+}
+
+
 article {
   width: 100%;
   height: 100%;
 }
-
-/* MAIN */
 
 h1 + p {
   margin: 0;  
@@ -224,6 +279,8 @@ img#hotel3 {
 h3, p {
   margin: 10px;
 }
+
+/* RATING SYSTEM */
 
 .stars {
   display: inline-flex;
