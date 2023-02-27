@@ -91,12 +91,12 @@ img#logo {
 .pointeur {
   border-width: 2px;
   border-style: solid;
-  border-color: #F2F2F2;  
+  border-color: #D9D9D9;  
   border-top-left-radius: 20px;
   border-bottom-left-radius: 20px;
   padding: 10px;
   padding-left: 20px;
-  background-color: #F2F2F2;
+  background-color: #D9D9D9;
 }
 
 input#search {
@@ -108,7 +108,7 @@ input#search {
 .barre {
   border-width: 2px;
   border-style: solid;
-  border-color: #F2F2F2; 
+  border-color: #D9D9D9; 
   padding: 10px;
 }
 
@@ -124,6 +124,40 @@ input#bouton {
   right: 2px;
 }
 
+.ensemble-filtres{
+  display: flex;
+  flex-direction: row;
+  align-items: baseline;
+}
+
+.button-filtres {
+  display: inline-flex;
+  font-weight: bold;
+  font-size: 18px;
+  background: white;
+  border-color: #D9D9D9;
+  border-style: solid;
+  border-width: 2px;
+  margin: 30px;
+  padding: 15px;
+  gap: 20px;
+  border-radius: 40px;
+}
+
+.button-filtres:hover {
+  background-color: #DEEBFF;
+}
+
+.info {
+  display: inline-flex;
+  margin-bottom: 40px;
+  width: 32%;
+  justify-content: space-between;
+}
+
+.info-txt {
+  font-size: 16px;
+}
 
 article {
   width: 100%;
@@ -288,16 +322,10 @@ i#loc {
   color: black;
 }
 
-i#vector {
-  position: relative;
-  top: 45px;
-  left: 120px;
-
-}
-
 .icon {
   display: flex;
-  justify-content: flex-start;
+  align-items: baseline;
+  justify-content: space-between;
   margin-bottom: 20px;
 }
 
