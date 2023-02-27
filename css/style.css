@@ -44,7 +44,6 @@ a {
 
 a:hover {
   color: #0065FC;
-  font-weight: bold;
 }
 
 .a1 {
@@ -131,6 +130,10 @@ input#bouton {
   right: 2px;
 }
 
+input#search {
+  outline: none;
+}
+
 /* Section Filtres */
 .ensemble-filtres{
   display: flex;
@@ -154,6 +157,7 @@ input#bouton {
 
 .button-filtres:hover {
   background-color: #DEEBFF;
+  cursor: pointer;
 }
 
 .info {
@@ -223,13 +227,6 @@ i#loc {
   width: 70%;
 }
 
-img#hotel {
-  border-top-right-radius: 20px;
-  border-top-left-radius: 20px;
-  height: 124px;
-  width: 246px;
-}
-
 .flex1 {
   background-color: white;
   border-radius: 20px;
@@ -252,6 +249,13 @@ img#hotel {
   padding-bottom: 0;
 }
 
+.img-heb img {
+  border-top-right-radius: 20px;
+  border-top-left-radius: 20px;
+  height: 124px;
+  width: 246px;
+}
+
 .txt-heb {
   padding: 5px;
   padding-top: 0;
@@ -272,13 +276,6 @@ img#hotel {
   width: 30%;
 }
 
-img#hotel2 {
-  border-bottom-left-radius: 20px;
-  border-top-left-radius: 20px;
-  height: 137px;
-  width: 144px;
-}
-
 .flex2 {
   display: flex;
   flex-direction: row;
@@ -295,25 +292,27 @@ img#hotel2 {
   width: 100%;
 }
 
-img#hotel3 {
-  border-top-right-radius: 20px;
-  border-top-left-radius: 20px;
-  height: 389px;
-  width: 302px;
-  position: relative;
-  left: 3px;
-}
-
 .img-pop {
   padding: 10px;
   padding-right: 0;
-  position: relative;
-  top: 2.2px;
+}
+
+.img-pop img {
+  border-bottom-left-radius: 20px;
+  border-top-left-radius: 20px;
+  height: 137px;
+  width: 144px;
 }
 
 .txt-pop {
-  padding: 5px;
+  display: flex;
+  flex-direction: column;
+  height: 161px;
   padding-left: 0;
+}
+
+.txt{
+  flex-direction: row;
 }
 
 /* Section Activités */
@@ -336,10 +335,28 @@ img#hotel3 {
   gap: 30px;
 }
 
+.img-act {
+  padding: 10px;
+  padding-bottom: 0;
+}
+
+.img-act img {
+  border-top-right-radius: 20px;
+  border-top-left-radius: 20px;
+  height: 389px;
+  width: 302px;
+}
+
+.txt-act {
+  padding: 5px;
+  padding-top: 0;
+}
+
 /* RATING SYSTEM */
 .stars {
   display: inline-flex;
-  justify-content: center;
+  justify-content: flex-start;
+  align-items: flex-end;
   padding-left: 10px;
 }
 
@@ -363,17 +380,20 @@ img#hotel3 {
 
 /* FOOTER */
 .foot {
-  display: flex;
-  flex-direction: row;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 200px;
   background-color: #F2F2F2;
-  justify-content: flex-start;
 }
 
 .a-propos, 
 .heb,
 .assitance {
-  padding: 30px;
-  margin-right: 150px;
-  margin-left: 50px;
   font-size: 16px;
+  margin-left: 50px;
+  margin-top: 20px;
+ }
+
+ .a2 {
+  padding-bottom: 10px;
  }
