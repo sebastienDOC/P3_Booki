@@ -21,17 +21,32 @@ h2 {
  }
 
 h3 {
-  margin: 0;
+  margin: 20px;
+  margin-left: 0;
+  margin-top: 10px;
+  margin-bottom: 5px;
   font-size: 16px;
 }
 
+h3, 
+p {
+  padding-left: 10px;
+}
+
 h4 {
+  font-size: 16px;
+  margin: 15px;
+}
+
+h5 {
   padding-bottom: 20px;
   font-size: 21px;
 }
 
 p {
   font-size: 14px;
+  margin-top: 0;
+  padding-top: 0;
 }
 
 /* HEADER */
@@ -199,10 +214,6 @@ h1 + p {
   position: relative;
 }
 
-h3, p {
-  margin: 10px;
-}
-
 i {
   color: #0065FC;
 }
@@ -245,15 +256,15 @@ i#loc {
 }
 
 .img-heb {
-  padding: 10px;
+  padding: 5px;
   padding-bottom: 0;
 }
 
 .img-heb img {
-  border-top-right-radius: 20px;
-  border-top-left-radius: 20px;
+  border-top-right-radius: 15px;
+  border-top-left-radius: 15px;
   height: 124px;
-  width: 246px;
+  width: 100%;
 }
 
 .txt-heb {
@@ -293,26 +304,32 @@ i#loc {
 }
 
 .img-pop {
-  padding: 10px;
+  padding: 5px;
   padding-right: 0;
+  height: 144px;
 }
 
 .img-pop img {
-  border-bottom-left-radius: 20px;
-  border-top-left-radius: 20px;
-  height: 137px;
-  width: 144px;
+  border-bottom-left-radius: 15px;
+  border-top-left-radius: 15px;
+  height: 144px;
+  width: 137px;
 }
 
 .txt-pop {
   display: flex;
   flex-direction: column;
-  height: 161px;
   padding-left: 0;
+  height: 50%;
 }
 
 .txt{
   flex-direction: row;
+}
+
+.flexRow {
+  display: flex;
+  flex-direction: column;
 }
 
 /* Section Activités */
@@ -336,15 +353,14 @@ i#loc {
 }
 
 .img-act {
-  padding: 10px;
-  padding-bottom: 0;
+  padding: 0;
 }
 
 .img-act img {
   border-top-right-radius: 20px;
   border-top-left-radius: 20px;
   height: 389px;
-  width: 302px;
+  width: 100%;
 }
 
 .txt-act {
@@ -357,7 +373,10 @@ i#loc {
   display: inline-flex;
   justify-content: flex-start;
   align-items: flex-end;
+  height: 40%;
+  width: 50%;
   padding-left: 10px;
+  padding-bottom: 10px;
 }
 
 .fa-star {
