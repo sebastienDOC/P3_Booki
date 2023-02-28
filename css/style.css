@@ -35,7 +35,7 @@ h4 {
 
 h5 {
   padding-bottom: 20px;
-  font-size: 21px;
+  font-size: 18px;
 }
 
 p {
@@ -90,6 +90,10 @@ img#logo {
 /* MAIN */
 
 /*Section Recherche */
+.sectionRecherche p {
+  font-size: 16px;
+}
+
 .recherche {
   display: flex;
   justify-content: flex-start;
@@ -130,7 +134,8 @@ input#search {
 input#bouton {
   background-color: #0065FC;
   color: white;
-  font-size: 16px;
+  font-size: 18px;
+  font-weight: 700;
   border-color: transparent;
   border-top-right-radius: 20px;
   border-bottom-right-radius: 20px;
@@ -154,7 +159,7 @@ input#search {
 .button-filtres {
   display: inline-flex;
   font-weight: bold;
-  font-size: 18px;
+  font-size: 17px;
   background: white;
   border-color: #D9D9D9;
   border-style: solid;
@@ -431,10 +436,6 @@ i#loc {
 
   h3 {
     font-size: 16px;
-  }
-
-  h5 {
-    font-size: 18px;
   }
 
   .txt-pop p {
