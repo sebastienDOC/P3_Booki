@@ -235,7 +235,7 @@ i#loc {
   width: 70%;
 }
 
-.hebergements {
+.grid-hebergements {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   grid-template-rows: 199px 199px;
@@ -244,20 +244,20 @@ i#loc {
   padding: 0;
 }
 
-.grid-hebergements {
+.hebergements {
   background-color: white;
   border-radius: 20px;
   box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
-  width: 100%;
   height: 100%;
+  width: 100%;
 }
 
-.grid-hebergements h3 {
+.hebergements h3 {
   margin-top: 4px;
   margin-bottom: 5px;
 }
 
-.grid-hebergements p {
+.hebergements p {
   margin-bottom: 7px;
 }
 
@@ -276,8 +276,6 @@ i#loc {
 
 .txt-heb {
   padding: 16px;
-  height: 38%;
-  width: 100%;
   padding-top: 0;
   padding-bottom: 0;
 }
@@ -289,10 +287,10 @@ i#loc {
 
 .flexRow {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   justify-content: space-between;
   width: 100%;
-  height: 100%;
+  height: 38%;
 }
 
 /*Section Populaire */
@@ -305,7 +303,7 @@ i#loc {
   width: 30%;
 }
 
-.populaire {
+.grid-populaire {
   display: grid;
   grid-template-columns: 1fr;
   grid-template-rows: 144px 144px 144px;
@@ -314,7 +312,7 @@ i#loc {
   padding: 0;
 }
 
-.grid-populaire {
+.populaire {
   display: flex;
   flex-direction: row;
   border-radius: 20px;
@@ -324,7 +322,7 @@ i#loc {
   width: 100%;
 }
 
-.grid-populaire h3 {
+.populaire h3 {
   margin-bottom: 7px;
 }
 
@@ -342,9 +340,6 @@ i#loc {
 }
 
 .txt-pop {
-  display: flex;
-  flex-direction: column;
-  height: 100%;
   padding-left: 15px;
   padding-right: 22px;
 }
@@ -363,14 +358,14 @@ i#loc {
   margin-bottom: 40px;
 }
 
-.activites {
+.grid-activites {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
   grid-template-rows: 445px;
   gap: 43px;
 }
 
-.grid-activites {
+.activites {
   display: flex;
   flex-direction: column;
   border-radius: 20px;
@@ -444,10 +439,19 @@ i#loc {
  }
 
 /* Tablettes */
-@media only screen and (min-width: 768px) and (max-width: 992px){
+@media screen and (min-width: 768px) and (max-width: 992px) {
   body {
     margin: 50px;
     margin-bottom: 0;
+  }
+
+  .sectionRecherche h1 {
+    font-size: 22px;
+  }
+
+  .find {
+    width: 100%;
+    height: 100%;
   }
 
   .a-propos h2 {
@@ -487,7 +491,7 @@ i#loc {
     width: auto;
   }
 
-  .populaire {
+  .grid-populaire {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: 150px;
@@ -504,7 +508,7 @@ i#loc {
     margin-bottom: 69px;
   }
 
-  .activites {
+  .grid-activites {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
     grid-template-rows: 267px;
@@ -516,7 +520,7 @@ i#loc {
     height: 51px;
   }
 
-  .txt-act span h4 {
+  .txt-act h4 {
     margin-top: 7px;
   }
 
@@ -531,7 +535,9 @@ i#loc {
     width: 100%;
    }
 
+  }
  /* Téléphones portables */
- @media only screen and (max-width: 768px) {
+ @media screen and (max-width: 768px) {
+
 
  }
