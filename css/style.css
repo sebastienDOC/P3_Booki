@@ -232,15 +232,14 @@ i#loc {
   border-radius: 20px;
   padding-left: 40px;
   padding-right: 40px;
-  width: 70%;
 }
 
-.grid-hebergements {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  grid-template-rows: 199px 199px;
+.flex-hebergements {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  flex-wrap: wrap;
   gap: 31px;
-  width: 100%;
   padding: 0;
 }
 
@@ -248,8 +247,8 @@ i#loc {
   background-color: white;
   border-radius: 20px;
   box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
-  height: 100%;
-  width: 100%;
+  width: 246px;
+  height: 199px;
 }
 
 .hebergements h3 {
@@ -262,16 +261,16 @@ i#loc {
 }
 
 .img-heb {
-  padding: 5px;
-  padding-bottom: 0;
-  height: 62%;
+  height: 124px;
 }
 
 .img-heb img {
-  border-top-right-radius: 15px;
-  border-top-left-radius: 15px;
-  height: 100%;
-  width: 100%;
+  padding: 5px;
+  padding-bottom: 0;
+  border-top-right-radius: 20px;
+  border-top-left-radius: 20px;
+  height: 119px;
+  width: 236px;
 }
 
 .txt-heb {
@@ -289,8 +288,7 @@ i#loc {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  width: 100%;
-  height: 38%;
+  height: 75px;
 }
 
 /*Section Populaire */
@@ -299,16 +297,12 @@ i#loc {
   border-radius: 20px;
   padding-left: 37px;
   padding-right: 40px;
-  padding-bottom: 34px;
-  width: 30%;
 }
 
-.grid-populaire {
-  display: grid;
-  grid-template-columns: 1fr;
-  grid-template-rows: 144px 144px 144px;
+.flex-populaire {
+  display: flex;
+  flex-direction: column;
   gap: 30px;
-  width: 100%;
   padding: 0;
 }
 
@@ -318,8 +312,8 @@ i#loc {
   border-radius: 20px;
   background-color: white;
   box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
-  height: 100%;
-  width: 100%;
+  height: 144px;
+  width: 343px;
 }
 
 .populaire h3 {
@@ -330,16 +324,17 @@ i#loc {
   padding: 5px;
   padding-right: 0;
   width: 40%;
+  height: 134px;
 }
 
 .img-pop img {
   border-bottom-left-radius: 15px;
   border-top-left-radius: 15px;
-  height: 100%;
-  width: 100%;
 }
 
 .txt-pop {
+  height: 100%;
+  width: 80%;
   padding-left: 15px;
   padding-right: 22px;
 }
@@ -349,7 +344,10 @@ i#loc {
   flex-direction: column;
   justify-content: space-between;
   width: 60%;
-  height: 100%;
+}
+
+.flexColumn .stars {
+  padding-left: 15px;
 }
 
 /* Section Activités */
@@ -358,18 +356,17 @@ i#loc {
   margin-bottom: 40px;
 }
 
-.grid-activites {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr;
-  grid-template-rows: 445px;
-  gap: 43px;
+.flex-activites {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
 }
 
 .activites {
-  display: flex;
-  flex-direction: column;
   border-radius: 20px;
   box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+  height: 445px;
+  width: 302px;
 }
 
 .img-act {
@@ -393,10 +390,6 @@ i#loc {
   display: inline-flex;
   justify-content: flex-start;
   padding-bottom: 12px;
-}
-
-.flexColumn .stars {
-  padding-left: 15px;
 }
 
 .fa-star {
@@ -489,12 +482,17 @@ i#loc {
   .sectionPopulaire {
     order: 2;
     width: auto;
+    padding-bottom: 48px;
   }
 
-  .grid-populaire {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 150px;
+  .populaire {
+    width: 252px;
+    height: 144px;
+  }
+
+  .flex-populaire {
+    display: flex;
+    flex-direction: row;
     gap: 20px;
     padding-bottom: 20px;
     width: 100%;
@@ -508,11 +506,14 @@ i#loc {
     margin-bottom: 69px;
   }
 
-  .grid-activites {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-    grid-template-rows: 267px;
-    gap: 50px;
+  .activites {
+    width: 182px;
+    height: 267px;
+  }
+
+  .flex-activites {
+    display: flex;
+    flex-direction: row;
     margin-bottom: 69px;
   }
 
@@ -524,7 +525,7 @@ i#loc {
     margin-top: 7px;
   }
 
-  .img-act img{
+  .img-act img {
     height: 211px;
   }
 
