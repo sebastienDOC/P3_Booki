@@ -284,7 +284,7 @@ i#loc {
   border-radius: 20px;
 }
 
-.flexRow {
+.flexTxt {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -377,7 +377,6 @@ i#loc {
   border-top-right-radius: 20px;
   border-top-left-radius: 20px;
   height: 389px;
-  width: 100%;
 }
 
 .txt-act {
