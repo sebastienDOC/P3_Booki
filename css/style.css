@@ -4,8 +4,7 @@ body {
   font-family: 'Raleway', sans-serif;
   font-size: 1em;
   max-width: 1400px;
-  margin: 50px;
-  margin-bottom: 0;
+  margin-top: 50px;
 }
 
 h1 {
@@ -243,12 +242,16 @@ i#loc {
   padding: 0;
 }
 
+.flex-hebergements a {
+  flex-grow: 1;
+}
+
 .hebergements {
   background-color: white;
   border-radius: 20px;
   box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
-  width: 246px;
-  height: 199px;
+  width: 100%;
+  height: 100%;
 }
 
 .hebergements h3 {
@@ -262,15 +265,15 @@ i#loc {
 
 .img-heb {
   height: 124px;
+  padding: 5px;
+  padding-bottom: 0;
 }
 
 .img-heb img {
-  padding: 5px;
-  padding-bottom: 0;
-  border-top-right-radius: 20px;
-  border-top-left-radius: 20px;
+  border-radius: 15px 15px 0 0;
   height: 119px;
-  width: 236px;
+  width: 100%;
+  min-width: 236px;
 }
 
 .txt-heb {
@@ -356,32 +359,40 @@ i#loc {
   margin-bottom: 40px;
 }
 
+.flex-activites a {
+  width: 25%;
+}
+
 .flex-activites {
   display: flex;
-  flex-direction: row;
   justify-content: space-between;
+  width: 100%;
+  gap: 40px;
 }
 
 .activites {
   border-radius: 20px;
   box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+  width: 100%;
+  min-width: 0;
   height: 445px;
-  width: 302px;
+  min-height: 0;
 }
 
 .img-act {
   padding: 0;
+  height: 87%;
 }
 
 .img-act img {
   border-top-right-radius: 20px;
   border-top-left-radius: 20px;
-  height: 389px;
 }
 
 .txt-act {
   padding: 5px;
   padding-top: 0;
+  height: 13%;
 }
 
 /* RATING SYSTEM */
@@ -431,7 +442,7 @@ i#loc {
  }
 
 /* Tablettes */
-@media screen and (min-width: 768px) and (max-width: 992px) {
+@media screen and (max-width: 992px) {
   body {
     margin: 50px;
     margin-bottom: 0;
@@ -477,6 +488,10 @@ i#loc {
     order: 1;
     width: auto;
   }
+  
+  .flex-hebergements a {
+    flex-grow: 0;
+  }
 
   .sectionPopulaire {
     order: 2;
@@ -506,7 +521,6 @@ i#loc {
   }
 
   .activites {
-    width: 182px;
     height: 267px;
   }
 
@@ -516,18 +530,22 @@ i#loc {
     margin-bottom: 69px;
   }
 
-  .txt-act {
-    height: 51px;
-  }
-
   .txt-act h4 {
     margin-top: 7px;
   }
 
-  .img-act img {
-    height: 211px;
+  .flex-activites {
+    gap: 50px;
   }
-
+  
+  .img-act {
+    height: 80%;
+  }
+  
+  .txt-act {
+    height: 20%;
+  }
+  
   .a-propos, 
   .heb,
   .assitance {
@@ -536,6 +554,7 @@ i#loc {
    }
 
   }
+
  /* Téléphones portables */
  @media screen and (max-width: 768px) {
 
