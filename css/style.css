@@ -108,6 +108,24 @@ img#logo {
   background-color: var(--second-color);
 }
 
+#cercle {
+  border: 2px solid var(--second-color);
+  min-width: 25px;
+  min-height: 25px;
+  border-radius: 50%;
+}
+
+.info {
+  display: flex;
+  align-items: center;
+}
+
+.fa-info {
+  position: relative;
+  left: 10px;
+  top: 2px;
+}
+
 i#loc {
   color: black;
 }
