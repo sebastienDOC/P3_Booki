@@ -412,20 +412,10 @@ i {
 
 .fa-star {
 	color: rgb(240, 240, 240);
-	cursor: pointer;
 }
-
 
 .fa-star.blue {
 	color: #0065FC;
-}
-
-.stars:hover .fa-star {
-  color: #0065FC;
-}
-
-.stars .fa-star:hover ~ .fa-star {
-  color: rgb(240, 240, 240);
 }
 
 /* FOOTER */
@@ -701,6 +691,14 @@ i {
 
   .flex-populaire a {
     width: auto;
+  }
+
+  .txt-pop h3 {
+    font-size: 16px;
+  }
+
+  .txt-pop p {
+    font-size: 14px;
   }
   
   .sectionActivites {
