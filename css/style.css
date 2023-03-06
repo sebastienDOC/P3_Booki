@@ -391,9 +391,16 @@ i {
 }
 
 .txt-act {
+  display: flex;
+  align-items: center;
   padding: 5px;
   padding-top: 0;
   height: 13%;
+}
+
+.txt-act h4 {
+  margin-top: 0;
+  margin-bottom: 0;
 }
 
 /* RATING SYSTEM */
@@ -528,11 +535,6 @@ i {
     margin-bottom: 60px;
   }
 
-  .txt-act h4 {
-    margin-top: 7px;
-    align-items: center;
-  }
-
   .flex-activites {
     gap: 3%;
   }
@@ -607,6 +609,7 @@ i {
 
   .recherche {
     margin: 35px 0 35px 0;
+    width: auto;
   }
 
   input#bouton {
@@ -615,10 +618,6 @@ i {
 
   input#search {
     width: 100%;
-  }
-
-  .barre {
-    min-width: 160px;
   }
 
   .search-icon {
@@ -735,13 +734,7 @@ i {
   }
   
   .txt-act {
-    height: 30%;
-    max-height: 50px;
-  }
-
-  .txt-act h4 {
-    justify-content: center;
-
+    max-height: 30%;
   }
 
   .foot {
