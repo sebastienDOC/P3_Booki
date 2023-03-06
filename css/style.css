@@ -7,8 +7,7 @@ body {
 }
 
 h1 {
-  padding-top: 42px;
-  padding-bottom: 8px;
+  padding: 42px 0 8px 0;
   margin: 0;
   font-size: 22px;
 }
@@ -28,9 +27,7 @@ h4 {
 }
 
 h5 {
-  margin-top: 40px;
-  margin-bottom: 40px;
-  padding-left: 44px;
+  margin: 40px 0 40px 0;
   padding-left: 0;
   font-weight: 700;
   font-size: 18px;
@@ -38,8 +35,7 @@ h5 {
 
 p {
   font-size: 14px;
-  margin-top: 0;
-  margin-bottom: 9px;
+  margin: 0 0 9px 0;
   padding-top: 0;
 }
 
@@ -60,15 +56,11 @@ a:hover {
 
 .a1 {
   padding-top: 50px;
-  border-top-width: 5px;
-  border-top-style: solid;
-  border-top-color: transparent;
+  border-top: 5px solid transparent;
 }
 
 .a1:hover {
-  border-top-width: 5px;
-  border-top-style: solid;
-  border-top-color: #0065FC;  
+  border-top: 5px solid #0065FC; 
 }
 
 nav {
@@ -105,8 +97,7 @@ img#logo {
 .pointeur {
   border: 2px solid #D9D9D9;  
   border-radius: 20px 0 0 20px;
-  padding: 15px 10px ;
-  padding-left: 20px;
+  padding: 15px 10px 15px 20px;
   background-color: #D9D9D9;
 }
 
@@ -125,9 +116,7 @@ input#search {
 }
 
 .barre {
-  border-width: 2px;
-  border-style: solid;
-  border-color: #D9D9D9; 
+  border: 2px solid #D9D9D9;
   display: flex;
   align-items: center;
   padding: 10px;
@@ -169,6 +158,14 @@ input#search {
   display: flex;
   flex-direction: row;
   align-items: baseline;
+  margin-bottom: 40px;
+  width: 100%;
+}
+
+.filtres {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
 }
 
 .button-filtres {
@@ -176,13 +173,13 @@ input#search {
   font-weight: bold;
   font-size: 17px;
   background: white;
-  border-color: #D9D9D9;
-  border-style: solid;
-  border-width: 2px;
-  margin: 30px;
+  border: 2px solid #D9D9D9;
+  margin: 30px 20px 30px 20px;
+  align-items: center;
   padding: 15px;
-  gap: 20px;
+  gap: 5px;
   border-radius: 40px;
+  max-height: 54px;
 }
 
 .button-filtres:hover {
@@ -240,8 +237,7 @@ i {
 .sectionHebergements {
   background-color: #F2F2F2;
   border-radius: 20px;
-  padding-left: 40px;
-  padding-right: 40px;
+  padding: 0 40px 0 40px;
 }
 
 .flex-hebergements {
@@ -266,8 +262,7 @@ i {
 }
 
 .hebergements h3 {
-  margin-top: 4px;
-  margin-bottom: 5px;
+  margin: 4px 0 5px 0;
 }
 
 .hebergements p {
@@ -288,9 +283,7 @@ i {
 }
 
 .txt-heb {
-  padding: 16px;
-  padding-top: 0;
-  padding-bottom: 0;
+  padding: 0 16px 0 16px;
 }
 
 .txt-heb, 
@@ -309,8 +302,7 @@ i {
 .sectionPopulaire {
   background-color: #F2F2F2;
   border-radius: 20px;
-  padding-left: 37px;
-  padding-right: 40px;
+  padding: 0 40px 0 37px;
 }
 
 .flex-populaire {
@@ -342,15 +334,13 @@ i {
 }
 
 .img-pop img {
-  border-bottom-left-radius: 15px;
-  border-top-left-radius: 15px;
+  border-radius: 15px 0 0 15px;
 }
 
 .txt-pop {
   height: 100%;
   width: 80%;
-  padding-left: 15px;
-  padding-right: 22px;
+  padding: 0 22px 0 15px;
 }
 
 .flexColumn {
@@ -396,8 +386,7 @@ i {
 }
 
 .img-act img {
-  border-top-right-radius: 20px;
-  border-top-left-radius: 20px;
+  border-radius: 20px 20px 0 0;
 }
 
 .txt-act {
@@ -434,7 +423,7 @@ i {
 /* FOOTER */
 .foot {
   display: flex;
-  justify-content: space-evenly;
+  justify-content: space-around;
   background-color: #F2F2F2;
   width: 100%;
 }
@@ -443,7 +432,7 @@ i {
 .heb,
 .assitance {
   font-size: 16px;
-  margin-top: 20px;
+  margin: 30px 0 30px 0;
  }
 
  .a2 {
@@ -453,7 +442,7 @@ i {
 /* Tablettes */
 @media only screen and (max-width: 992px) {
   body {
-    margin: 0 50px 0 50px;
+    margin: 0 30px 0 30px;
   }
 
   .sectionRecherche h1 {
@@ -535,15 +524,17 @@ i {
   .flex-activites {
     display: flex;
     flex-direction: row;
-    margin-bottom: 69px;
+    margin-bottom: 60px;
   }
 
   .txt-act h4 {
     margin-top: 7px;
+    position: relative;
+    top: 15px;
   }
 
   .flex-activites {
-    gap: 5%;
+    gap: 3%;
   }
   
   .img-act {
@@ -552,11 +543,13 @@ i {
   
   .txt-act {
     height: 20%;
+    min-height: 80px;
   }
-  
+
   .a-propos, 
   .heb,
   .assitance {
+    padding: 0 0 40px 50px;
     font-size: 16px;
     width: 100%;
    }
@@ -634,18 +627,24 @@ i {
     right: 20px;
   }
 
-  .ensemble-filtres h5 {
-    margin: 0 300px 0 0;
-  }
-
   .ensemble-filtres {
     flex-direction: row;
     flex-wrap: wrap;
     gap: 14px;
+    margin: 0;
+  }
+
+  .ensemble-filtres h5 {
+    margin: 0;
+  }
+
+  .filtres {
+    flex-wrap: wrap;
+    gap: 2%;
   }
 
   .btn {
-    width: 47%;
+    width: 48%;
     margin: 15px 0 15px 0;
   }
 
@@ -654,7 +653,7 @@ i {
     margin: 0;
     font-size: 11px;
     width: 100%;
-    height: 100%;
+    height: 50px;
   }
 
   .info {
@@ -668,7 +667,27 @@ i {
 
   .sectionHebergements {
     order: 2;
+    background-color: white;
+    padding: 0 20px 0 20px;
   }
+
+  .sectionHebergements h5 {
+    visibility: hidden;
+  }
+
+  .hebergements {
+    height: 199px;
+  }
+
+  .txt-heb h3 {
+    margin-top: 0;
+  }
+
+
+
+
+
+  
 
   .sectionPopulaire {
     order: 1;
@@ -684,9 +703,60 @@ i {
     width: 100%;
   }
 
-  .foot {
+
+
+
+
+
+
+
+  .sectionActivites {
+    margin-bottom: 80px;
+    padding: 0 20px 0 20px;
+    width: auto;
+  }
+
+  .sectionActivites h1 {
+    padding-top: 0;
+  }
+  
+  .flex-activites a {
+    flex-grow: 1;
+    width: 100% ;
+  }
+  
+  .flex-activites {
+    display: flex;
     flex-direction: column;
     width: 100%;
-    padding: 0 0 20px 30px;
+    gap: 20px;
+  }
+  
+  .activites {
+    height: 190px;
+  }
+  
+  .img-act {
+    height: 70%;
+  }
+  
+  .txt-act {
+    height: 30%;
+  }
+
+
+
+
+  .foot {
+    flex-direction: column;
+    
+  }
+  
+  .a-propos,
+  .heb,
+  .assitance {
+    padding: 10px 0 20px 30px;
+    margin: 0;
+    width: auto;
   }
  }
