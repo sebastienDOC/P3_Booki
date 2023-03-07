@@ -28,16 +28,22 @@
                     <h1>Trouvez votre hébergement pour des vacances de rêve</h1>
                     <p>En plein centre-ville ou en pleine nature</p>
                 </div>
-                <div class="recherche">
-                    <div class="pointeur"><i class="fa-solid fa-location-dot fa-xl" id="loc"></i></div>
-                    <div class="barre"><input type="text" placeholder="Marseille, France" id="search"></div>
+                <form role="search" class="recherche">
+                    <label class="pointeur">
+                        <i class="fa-solid fa-location-dot fa-xl" id="loc"></i>
+                    </label>
+                    <div class="barre">
+                        <input type="text" placeholder="Marseille, France" id="search">
+                    </div>
                     <div class="bouton1">
-                        <input type="submit" name="search" value="Rechercher" id="bouton">
+                        <input type="text" name="search" value="Rechercher" id="bouton">
                     </div>
                     <div class="bouton2">
-                        <button class="search-icon" type="button"><i class="fa-solid fa-magnifying-glass fa-xl" id="seek"></i></button>
+                        <button class="search-icon" type="button">
+                            <i class="fa-solid fa-magnifying-glass fa-xl" id="seek"></i>
+                        </button>
                     </div>
-                </div>
+                </form>
                 <div class="ensemble-filtres">
                     <h5>Filtres</h5>
                     <div class="filtres">

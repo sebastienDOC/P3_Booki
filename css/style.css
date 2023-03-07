@@ -165,7 +165,8 @@ input#bouton {
   font-weight: 700;
   border-color: transparent;
   border-radius: 0 20px 20px 0;
-  padding: 14px;
+  height: 53px;
+  width: 120px;
   text-align: center;
   position: relative;
   right: 2px;
