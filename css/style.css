@@ -9,7 +9,7 @@
 body {
   font-family: 'Raleway', sans-serif;
   max-width: 1400px;
-  margin: 0 50px 0 50px;
+  margin: 0 20px 0 20px;
 }
 
 h1 {
@@ -33,7 +33,7 @@ h4 {
 }
 
 h5 {
-  margin: 40px 0 40px 0;
+  margin: 50px 0 50px 0;
   padding-left: 0;
   font-weight: 700;
   font-size: 18px;
@@ -189,7 +189,6 @@ i#seek {
   display: flex;
   flex-direction: row;
   align-items: baseline;
-  margin-bottom: 40px;
   width: 100%;
 }
 
@@ -197,6 +196,10 @@ i#seek {
   display: flex;
   flex-direction: row;
   width: 100%;
+}
+
+.button-text {
+  font-family: 'Raleway', sans-serif;
 }
 
 .button-filtres {
@@ -507,7 +510,7 @@ h1 + p {
     align-items: center;
   }
 
-  .stars {
+  .flexColumn .stars {
     padding-bottom: 30px;
   }
 
@@ -515,6 +518,22 @@ h1 + p {
     margin-bottom: 50px;
   }
 
+  .cards-activites {
+    height: 267px;
+  }
+
+  .img-act {
+    height: 80%;
+  }
+
+  .img-act img {
+    height: 211px;
+  }
+
+  .txt-act {
+    height: 20%;
+  }
+  
   .flex-activites {
     flex-direction: row;
     margin-bottom: 60px;
@@ -527,7 +546,7 @@ h1 + p {
   .a-propos, 
   .heb,
   .assitance {
-    padding: 0 0 40px 50px;
+    padding: 0 0 20px 0;
     font-size: 16px;
    }
 
@@ -710,9 +729,12 @@ h1 + p {
     height: 70%;
   }
   
+  .img-act img{
+    height: 134px;
+  }
+  
   .txt-act {
-    height: 55px;
-    max-height: 30%;
+    height: 30%;
   }
 
   .foot {
