@@ -300,15 +300,14 @@ h1 + p {
 
 .img-heb {
   height: 62%;
-  padding: 5px;
-  padding-bottom: 0;
+  padding: 5px 5px 0 5px;
 }
 
 .img-heb img {
   border-radius: 15px 15px 0 0;
   height: 119px;
   width: 100%;
-  min-width: 236px;
+  min-width: 220px;
 }
 
 .txt-heb {
@@ -737,7 +736,7 @@ h1 + p {
     flex-grow: 1;
     width: 100% ;
   }
-  
+
   .cards-activites {
     height: 190px;
   }
