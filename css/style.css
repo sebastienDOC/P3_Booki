@@ -93,7 +93,7 @@ i {
 
 /* MAIN */
 
-/*Section Recherche */
+/* Recherche */
 .sectionRecherche p {
   font-size: 16px;
 }
@@ -184,7 +184,7 @@ i#seek {
   color: white;
 }
 
-/* Section Filtres */
+/* Filtres */
 .ensemble-filtres{
   display: flex;
   flex-direction: row;
