@@ -264,30 +264,34 @@ h1 + p {
   background-color: var(--main-bg-color);
   border-radius: 20px;
   padding: 0 40px 0 40px;
+  width: 65%;
+}
+
+.sectionHebergements h5 {
+  margin: 40px 0 40px 0;
 }
 
 .flex-hebergements {
   display: flex;
   flex-direction: row;
-  justify-content: center;
   flex-wrap: wrap;
-  gap: 31px;
-  padding: 0;
+  gap: 25px;
 }
 
 .flex-hebergements a {
   flex-grow: 1;
-  height: 199px;
+  height: 200px;
 }
 
 .cards-hebergements {
   background-color: white;
   border-radius: 20px;
   box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+  height: 200px;
 }
 
 .cards-hebergements h3 {
-  margin: 4px 0 5px 0;
+  margin: 0px 0 5px 0;
 }
 
 .cards-hebergements p {
@@ -327,6 +331,7 @@ h1 + p {
   background-color: var(--main-bg-color);
   border-radius: 20px;
   padding: 0 40px 0 37px;
+  width: 30%;
 }
 
 .flex-populaire {
@@ -342,7 +347,8 @@ h1 + p {
   border-radius: 20px;
   background-color: white;
   box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
-  width: 343px;
+  max-width: 343px;
+  width: 100%;
 }
 
 .cards-populaire h3 {
@@ -482,11 +488,13 @@ h1 + p {
 
   .sectionHebergements {
     order: 1;
+    width: auto;
   }
 
   .sectionPopulaire {
     order: 2;
     padding-bottom: 40px;
+    width: auto;
   }
 
   .cards-populaire {
@@ -495,13 +503,13 @@ h1 + p {
   }
 
   .flex-populaire a {
-    width: 30%;
+    width: 33%;
   }
 
   .flex-populaire {
     display: flex;
     flex-direction: row;
-    gap: 2%;
+    gap: 3%;
     width: 100%;
   }
 
@@ -683,15 +691,21 @@ h1 + p {
   .sectionPopulaire h1 {
     padding: 20px 0 0 0;
   }
-  
+
   .flex-populaire {
     display: flex;
     flex-direction: column;
+    width: 100%;
     gap: 20px
   }
 
   .flex-populaire a {
-    width: auto;
+    flex-grow: 1;
+    width: 100%;
+  }
+
+  .cards-populaire {
+    max-width: 100%;
   }
 
   .txt-pop h3 {
@@ -712,16 +726,16 @@ h1 + p {
     padding-top: 0;
   }
   
-  .flex-activites a {
-    flex-grow: 1;
-    width: 100% ;
-  }
-  
   .flex-activites {
     display: flex;
     flex-direction: column;
     width: 100%;
     gap: 20px;
+  }
+  
+  .flex-activites a {
+    flex-grow: 1;
+    width: 100% ;
   }
   
   .cards-activites {
