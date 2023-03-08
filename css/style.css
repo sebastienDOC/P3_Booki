@@ -319,7 +319,7 @@ h1 + p {
   border-radius: 20px;
 }
 
-.flexTxt {
+.flexTxtHeb {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -366,7 +366,7 @@ h1 + p {
   border-radius: 15px 0 0 15px;
 }
 
-.flexColumn {
+.flexTxtPop {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -512,7 +512,7 @@ h1 + p {
     width: 100%;
   }
 
-  .flexColumn {
+  .flexTxtPop {
     height: 144px;
   }
 
