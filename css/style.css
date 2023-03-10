@@ -603,7 +603,7 @@ h1 + p {
   }
 
   .sectionRecherche h1 {
-    padding: 10px 0 12px 0;
+    padding: 30px 0 12px 0;
   }
 
   .recherche {
@@ -645,7 +645,6 @@ h1 + p {
   }
 
   .bouton-filtres {
-    justify-content: center;
     margin: 0;
     font-size: 11px;
     gap: 20px;
