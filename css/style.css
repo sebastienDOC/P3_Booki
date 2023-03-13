@@ -6,10 +6,14 @@
   --hover-color: #deebff;
 }
 
+.container {
+  max-width: 1400px;
+  margin: auto;
+}
+
 body {
   font-family: "Raleway", sans-serif;
-  max-width: 1400px;
-  margin: 0 20px 0 20px;
+  padding: 0 20px 0 20px;
 }
 
 h1 {
@@ -27,12 +31,8 @@ h3 {
   font-size: 16px;
 }
 
-h4 {
-  font-size: 16px;
-  margin: 15px;
-}
-
-h5 {
+.titre-filtres,
+.afficher {
   margin: 50px 0 50px 0;
   padding-left: 0;
   font-weight: 700;
@@ -267,10 +267,6 @@ h1 + p {
   width: 65%;
 }
 
-.sectionHebergements h5 {
-  margin: 40px 0 40px 0;
-}
-
 .flex-hebergements {
   display: flex;
   flex-direction: row;
@@ -412,8 +408,8 @@ h1 + p {
   height: 15%;
 }
 
-.txt-act h4 {
-  margin: 0 15px 0 15px;
+.txt-act h3 {
+  padding: 0 15px 0 15px;
 }
 
 /* RATING SYSTEM */
@@ -451,10 +447,6 @@ h1 + p {
 
 /* Tablettes */
 @media only screen and (max-width: 992px) {
-  body {
-    margin: 0 30px 0 30px;
-  }
-
   .sectionRecherche h1 {
     font-size: 22px;
   }
@@ -564,7 +556,8 @@ h1 + p {
 /* Téléphones portables */
 @media only screen and (max-width: 768px) {
   body {
-    margin: auto;
+    margin: 0;
+    padding: 0;
   }
 
   header {
@@ -580,16 +573,16 @@ h1 + p {
   .a1 {
     display: flex;
     justify-content: center;
-    border-bottom: 5px solid var(--second-color);
+    border-bottom: 5px solid var(--border-color);
     margin: 0;
     padding: 0 0 20px 0;
+    border-top: 0;
     width: 100%;
   }
 
   .a1:hover {
     border-top: 0;
     border-bottom: 5px solid var(--main-color);
-    width: 100%;
   }
 
   .ancres {
@@ -631,7 +624,7 @@ h1 + p {
     margin: 0;
   }
 
-  .ensemble-filtres h5 {
+  .ensemble-filtres .titre-filtres {
     margin: 0;
   }
 
@@ -648,13 +641,17 @@ h1 + p {
   .bouton-filtres {
     margin: 0;
     font-size: 11px;
-    gap: 20px;
+    gap: 5px;
     width: 100%;
     height: 50px;
   }
 
+  .bouton-text {
+    text-align: left;
+  }
+
   .info {
-    margin: 40px 0 20px 0;
+    margin: 40px 0;
   }
 
   .hebergements-and-populaires {
@@ -667,8 +664,9 @@ h1 + p {
     padding: 0 20px 0 20px;
   }
 
-  .sectionHebergements h5 {
+  .sectionHebergements .afficher {
     visibility: hidden;
+    margin-top: 0;
   }
 
   .cartes-hebergements {
